@@ -14,7 +14,7 @@ func main(){
 	//var inhaArray [7] string //array
 //	var inhaSlice [] string //slice
 //	inhaSlice = make([]string, 7)
-	inhaSlice := []string{"i","n","h","a" }
+	inhaSlice := []int{1,2,3,4,5}
 
 //	inhaSlice[0] = "i"
 //	inhaSlice[1] = "n"
@@ -24,8 +24,8 @@ func main(){
 	for i := 0 ; i < len(inhaSlice); i++ {
 		fmt.Println(inhaSlice[i])
 	}
-	fmt.Println(sum(1,5,3))
-	fmt.Println(sum(3,1))
+	fmt.Println(sum(inhaSlice...))
+	
 
 //	fmt.Println(1)
 }
